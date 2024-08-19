@@ -1,0 +1,11 @@
+// Основное
+@import "base/fonts";
+@import "base/variables";
+@import "base/normalize";
+@import "base/container";
+
+// Общие элементы
+// @import "elems/main-block";
+
+// БЭМ-блоки
+@import "../blocks/modules";
