@@ -16,26 +16,11 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
 	margin: 0;
-	font: 500 16px/1.37 'Montserrat', sans-serif;
-	color: $color-text;
+	font: 500 15px/1.6 'Montserrat', sans-serif;
+	color: $color-black;
 	text-align: left;
-	/* min-height: 100vh; */
-	min-height: 100dvh;
-	background-color: $color-white;
-
-	@media (min-width: 471px)
-    {
-        & {
-			background: $color-black url(../img/bg.jpg) no-repeat left top / cover;
-
-			@supports (background-image: -webkit-image-set(url(../img/bg.webp)))
-			{
-				& {
-				  background-image: url(../img/bg.webp);
-				}
-			}
-		}
-    }
+	background-color: $color-bg;
+	padding: 0 0 50px 357px;
 }
 
 h1, h2, h3, h5, h6,

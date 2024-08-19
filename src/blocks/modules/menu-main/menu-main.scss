@@ -1,0 +1,57 @@
+.menu-main {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 0 36px;
+
+    &__link {
+        fill: $color-black;
+        stroke: $color-black;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: $color-black;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 600;
+        opacity: .7;
+
+        &:hover,
+        &_active {
+            fill: $color-main;
+            stroke: $color-main;
+            color: $color-black;
+            opacity: 1;
+        }
+    }
+    &__pict {
+        height: 24px;
+        width: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_num2,
+        &_num4 {
+            stroke: none;
+        }
+        &_num3 {
+            border-radius: 50%;
+            padding: 4px;
+            border: 2px solid $color-black;
+            stroke: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .5s;
+        }
+    }
+    &__link:hover &__pict_num3,
+    &__link_active &__pict_num3 {
+        border-color: $color-main;
+    }
+    &__icon {
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
