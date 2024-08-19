@@ -6,7 +6,7 @@
         <title>Багира (Главная)</title>
         <meta name="theme-color" content="#3dae2b">
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-        <link rel="stylesheet" href="local/css/main.min.css">
+        <link rel="stylesheet" href="local/css/main.css">
     </head>
     <body>
         <div class="panel-left">
@@ -69,7 +69,16 @@
 </div>
         <div class="container">
             <div class="panel-top">
-    <div class="panel-top__back"></div>
+    <div class="panel-top__back">
+        <a href="javascript:;" class="back-link">
+            <div class="back-link__icon">
+                <svg class="back-link__str">
+                    <use xlink:href="local/img/sprites/sprite.svg#back"></use>
+                </svg>
+            </div>
+            <span class="back-link__name">Обратно</span>
+        </a>
+    </div>
     <div class="panel-top__user">
         <a href="javascript:;" class="panel-user">
             <span class="panel-user__name">
@@ -80,17 +89,33 @@
                 <img src="local/img/panel-user/ava.png" srcset="local/img/panel-user/ava.png 1x, local/img/panel-user/ava@2x.png 2x" alt="" height="30" width="30">
             </div>
         </a>
+        <div class="panel-user-block visible-opacity">
+            <a href="javascript:;" class="panel-user-block__link panel-user-block__link_stroke">
+                <svg class="panel-user-block__icon">
+                    <use xlink:href="local/img/sprites/sprite.svg#profile"></use>
+                </svg>
+                Настройки профиля
+            </a>
+            <a href="javascript:;" class="panel-user-block__link panel-user-block__link_fill">
+                <svg class="panel-user-block__icon">
+                    <use xlink:href="local/img/sprites/sprite.svg#exit"></use>
+                </svg>
+                Выйти из аккаунта
+            </a>
+        </div>
     </div>
     <div class="panel-top__message">
         <a href="javascript:;" class="message-icon">
             <svg class="message-icon__icon">
                 <use xlink:href="local/img/sprites/sprite.svg#message"></use>
             </svg>
-            <span class="message-icon__count">0</span>
+            <span class="message-icon__count">2</span>
         </a>
     </div>
 </div>
+            Blocks
         </div>
-        <script src="local/js/main.min.js"></script>
+        <div class="full-shadow visible-opacity"></div>
+        <script src="local/js/main.js"></script>
     </body>
 </html>
