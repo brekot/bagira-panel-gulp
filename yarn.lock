@@ -4426,15 +4426,6 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
-"css-parse@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "css-parse@npm:2.0.0"
-  dependencies:
-    css: "npm:^2.0.0"
-  checksum: 10/e6b23721364f6d7028538463f2388200430f32331fbbd8cd3b2c545e4b17a270594b74986aa1d6f2ad9dd206cbdad1c5e2331a16c06f4a7213f07494a32cca2b
-  languageName: node
-  linkType: hard
-
 "css-select-base-adapter@npm:^0.1.1":
   version: 0.1.1
   resolution: "css-select-base-adapter@npm:0.1.1"
@@ -4458,15 +4449,6 @@ bem-tools-create@bem-tools/bem-tools-create:
   version: 1.4.1
   resolution: "css-selector-parser@npm:1.4.1"
   checksum: 10/81ae797956a6c03e9668fcc11446b2e8ffb13fe87fccc5c80b852cace4136668bab8b171192f395edde94932b8e43b67c0975d8c187721e2da186684d6a17e83
-  languageName: node
-  linkType: hard
-
-"css-stringify@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "css-stringify@npm:2.0.0"
-  dependencies:
-    css: "npm:^2.0.0"
-  checksum: 10/26d0bb9b17539e18c52cd8d500bafc15362b1d0aef97880870d0a01a8ae4dde8b7ae619c520bee47aba7b448d104bf41b2405bc52a43b0857e286862e53bb269
   languageName: node
   linkType: hard
 
@@ -4494,18 +4476,6 @@ bem-tools-create@bem-tools/bem-tools-create:
   version: 3.4.2
   resolution: "css-what@npm:3.4.2"
   checksum: 10/d5a5343619828499f0aa3fa5c1301123541eea41057a7da45516a3ceb19ed79e722e829913b71bce490bfdf08599a847e77ba4917bd2623c2d7fd4654e6b94f4
-  languageName: node
-  linkType: hard
-
-"css@npm:^2.0.0":
-  version: 2.2.4
-  resolution: "css@npm:2.2.4"
-  dependencies:
-    inherits: "npm:^2.0.3"
-    source-map: "npm:^0.6.1"
-    source-map-resolve: "npm:^0.5.2"
-    urix: "npm:^0.1.0"
-  checksum: 10/526b35838a0ff133de2f9363a068524406df81abc638647505457867685eca2289a818af4c3ea63eb557112e6f4ff7a24d13973c212580cf37b69d5584e41648
   languageName: node
   linkType: hard
 
@@ -7263,18 +7233,6 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
-"group-css-media-queries@npm:^1.4.1":
-  version: 1.4.1
-  resolution: "group-css-media-queries@npm:1.4.1"
-  dependencies:
-    css-parse: "npm:^2.0.0"
-    css-stringify: "npm:^2.0.0"
-  bin:
-    group-css-media-queries: ./bin/group-css-media-queries
-  checksum: 10/6270f8012b5c65be7d606d3f910679cebfe600eeea79b8896de605d1bd44ff8b5c1c1b62c2622d99b20fd03387b2d6defb3501be1c0f617f3adeb270cf342e9a
-  languageName: node
-  linkType: hard
-
 "gulp-autoprefixer@npm:^8.0.0":
   version: 8.0.0
   resolution: "gulp-autoprefixer@npm:8.0.0"
@@ -7384,17 +7342,6 @@ bem-tools-create@bem-tools/bem-tools-create:
     through2: "npm:^4.0.2"
     vinyl: "npm:^2.2.1"
   checksum: 10/7b15c29c3f3791fa50257b53ee069f1bb9d7b3204bc3c786a289cc43dc160f11a42f9ec4cc2ae3c47bf32e48e9c20dc0853c8ccb4b963d29cc0b98956c857765
-  languageName: node
-  linkType: hard
-
-"gulp-group-css-media-queries@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "gulp-group-css-media-queries@npm:1.2.2"
-  dependencies:
-    group-css-media-queries: "npm:^1.4.1"
-    plugin-error: "npm:^1.0.1"
-    through2: "npm:^2.0.3"
-  checksum: 10/9807ce1a159190d1880066f4a1f775fb8b445e07fd6d09b358d6b9b7afa91220a5f11c1abdcd17c8f647474f251c4ab87fa4388207c824eecd81dd4f583a101f
   languageName: node
   linkType: hard
 
@@ -7653,7 +7600,6 @@ bem-tools-create@bem-tools/bem-tools-create:
     gulp-debug: "npm:^4.0.0"
     gulp-favicons: "npm:^3.0.0"
     gulp-file-include: "npm:^2.3.0"
-    gulp-group-css-media-queries: "npm:^1.2.2"
     gulp-if: "npm:^3.0.0"
     gulp-imagemin: "npm:^7.1.0"
     gulp-newer: "npm:^1.4.0"
@@ -13323,7 +13269,7 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
-"source-map-resolve@npm:^0.5.0, source-map-resolve@npm:^0.5.2":
+"source-map-resolve@npm:^0.5.0":
   version: 0.5.3
   resolution: "source-map-resolve@npm:0.5.3"
   dependencies:

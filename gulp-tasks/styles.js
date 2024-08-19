@@ -7,7 +7,6 @@ import rename from "gulp-rename";
 import dartsass from "sass";
 import gulpsass from "gulp-sass";
 import mincss from "gulp-clean-css";
-import groupmedia from "gulp-group-css-media-queries";
 import autoprefixer from "gulp-autoprefixer";
 import sourcemaps from "gulp-sourcemaps";
 import plumber from "gulp-plumber";
@@ -24,7 +23,6 @@ gulp.task("styles", () => {
         .pipe(gulpif(!production, sourcemaps.init()))
         .pipe(plumber())
         .pipe(sass())
-        .pipe(groupmedia())
         .pipe(gulpif(production, autoprefixer({
             cascade: false,
             grid: true

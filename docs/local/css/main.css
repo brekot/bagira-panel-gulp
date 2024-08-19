@@ -179,36 +179,6 @@ textarea {
   max-width: 973px;
 }
 
-.full-shadow {
-  display: none;
-  background-color: rgba(0, 0, 0, 0.15);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-}
-.full-shadow_show {
-  display: block;
-}
-
-.visible-opacity {
-  transition-duration: 1s;
-  transition-behavior: allow-discrete;
-  display: none;
-  opacity: 0;
-}
-.visible-opacity_show {
-  display: block;
-  opacity: 1;
-}
-@starting-style {
-  .visible-opacity_show {
-    opacity: 0;
-  }
-}
-
 .btn {
   border-radius: 10px;
   width: 100%;
@@ -464,5 +434,35 @@ textarea {
   justify-content: center;
   top: -3px;
   right: 0px;
+}
+
+.full-shadow {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.full-shadow_show {
+  display: block;
+}
+
+.visible-opacity {
+  transition-duration: 1s;
+  transition-behavior: allow-discrete;
+  display: none;
+  opacity: 0;
+}
+.visible-opacity_show {
+  display: block;
+  opacity: 1;
+}
+@starting-style {
+  .visible-opacity_show {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=maps/main.css.map */

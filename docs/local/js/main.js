@@ -1,6 +1,32 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/blocks/modules/full-shadow/full-shadow.js":
+/*!*******************************************************!*\
+  !*** ./src/blocks/modules/full-shadow/full-shadow.js ***!
+  \*******************************************************/
+/***/ (() => {
+
+window.showFullShadow = function (block) {
+  var elem = document.querySelector('.full-shadow');
+  elem.classList.add('visible-opacity_show');
+  elem.dataset.block = block;
+};
+
+window.hideFullShadow = function () {
+  var elem = document.querySelector('.full-shadow');
+  elem.dataset.block = '';
+  elem.classList.remove('visible-opacity_show');
+};
+
+document.querySelector('.full-shadow').addEventListener('click', function (e) {
+  var event = new Event('click');
+  document.querySelector('.' + e.target.dataset.block).dispatchEvent(event);
+  hideFullShadow();
+});
+
+/***/ }),
+
 /***/ "./src/blocks/modules/panel-top/panel-top.js":
 /*!***************************************************!*\
   !*** ./src/blocks/modules/panel-top/panel-top.js ***!
@@ -18,32 +44,6 @@ document.querySelector('.panel-user-block').addEventListener('click', function (
 
 /***/ }),
 
-/***/ "./src/js/full-shadow.js":
-/*!*******************************!*\
-  !*** ./src/js/full-shadow.js ***!
-  \*******************************/
-/***/ (() => {
-
-function showFullShadow(block) {
-  var elem = document.querySelector('.full-shadow');
-  elem.classList.add('visible-opacity_show');
-  elem.dataset.block = block;
-}
-
-function hideFullShadow() {
-  var event = new Event('click'),
-      elem = document.querySelector('.full-shadow');
-  document.querySelector('.' + elem.dataset.block).dispatchEvent(event);
-  elem.dataset.block = '';
-  elem.classList.remove('visible-opacity_show');
-}
-
-document.querySelector('.full-shadow').addEventListener('click', function () {
-  return hideFullShadow();
-});
-
-/***/ }),
-
 /***/ "./src/js/import/modules.js":
 /*!**********************************!*\
   !*** ./src/js/import/modules.js ***!
@@ -52,8 +52,11 @@ document.querySelector('.full-shadow').addEventListener('click', function () {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_panel_top_panel_top__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/panel-top/panel-top */ "./src/blocks/modules/panel-top/panel-top.js");
-/* harmony import */ var _modules_panel_top_panel_top__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_panel_top_panel_top__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _modules_full_shadow_full_shadow__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/full-shadow/full-shadow */ "./src/blocks/modules/full-shadow/full-shadow.js");
+/* harmony import */ var _modules_full_shadow_full_shadow__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_full_shadow_full_shadow__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _modules_panel_top_panel_top__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/panel-top/panel-top */ "./src/blocks/modules/panel-top/panel-top.js");
+/* harmony import */ var _modules_panel_top_panel_top__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_panel_top_panel_top__WEBPACK_IMPORTED_MODULE_1__);
+
 
 
 /***/ }),
@@ -144,12 +147,9 @@ var __webpack_exports__ = {};
   !*** ./src/js/index.js ***!
   \*************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _full_shadow__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./full-shadow */ "./src/js/full-shadow.js");
-/* harmony import */ var _full_shadow__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_full_shadow__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _import_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./import/modules */ "./src/js/import/modules.js");
-/* harmony import */ var _script__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./script */ "./src/js/script.js");
-/* harmony import */ var _script__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_script__WEBPACK_IMPORTED_MODULE_2__);
-
+/* harmony import */ var _import_modules__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./import/modules */ "./src/js/import/modules.js");
+/* harmony import */ var _script__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./script */ "./src/js/script.js");
+/* harmony import */ var _script__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_script__WEBPACK_IMPORTED_MODULE_1__);
 
 
 })();

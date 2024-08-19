@@ -5,9 +5,10 @@
 @import "base/container";
 
 // Общие элементы
-@import "elems/full-shadow";
-@import "elems/visible-opacity";
 @import "elems/btns";
 
 // БЭМ-блоки
 @import "../blocks/modules";
+
+// После модулей
+@import "elems/visible-opacity";
