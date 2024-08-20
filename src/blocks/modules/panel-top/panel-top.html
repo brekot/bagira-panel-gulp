@@ -1,14 +1,12 @@
 <div class="panel-top">
     <div class="panel-top__back">
-        <a href="javascript:;" class="back-link">
-            <div class="back-link__icon">
-                <svg class="back-link__str">
-                    <use xlink:href="local/img/sprites/sprite.svg#back"></use>
-                </svg>
-            </div>
-            <span class="back-link__name">Обратно</span>
-        </a>
+        @@if (showBack === true) {
+            @@include("../back-link/back-link.html")
+        }
     </div>
+    <a href="/" class="panel-top__logo">
+        <img src="local/img/logo.mobile.svg" alt="logo" width="77" height="59">
+    </a>
     <div class="panel-top__user">
         <a href="javascript:;" class="panel-user">
             <span class="panel-user__name">
@@ -40,6 +38,23 @@
                 <use xlink:href="local/img/sprites/sprite.svg#message"></use>
             </svg>
             <span class="message-icon__count">2</span>
+        </a>
+    </div>
+    <div class="panel-top__letter">
+        <a href="javascript:;" class="letter-link">
+            <svg class="letter-link__icon">
+                <use xlink:href="local/img/sprites/sprite.svg#letter"></use>
+            </svg>
+        </a>
+    </div>
+    <div class="panel-top__menu-btn">
+        <a href="javascript:;" class="menu-btn">
+            <svg class="menu-btn__icon menu-btn__icon_open">
+                <use xlink:href="local/img/sprites/sprite.svg#menu"></use>
+            </svg>
+            <svg class="menu-btn__icon menu-btn__icon_close">
+                <use xlink:href="local/img/sprites/sprite.svg#close"></use>
+            </svg>
         </a>
     </div>
 </div>

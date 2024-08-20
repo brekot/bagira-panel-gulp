@@ -21,6 +21,13 @@ body {
 	text-align: left;
 	background-color: $color-bg;
 	padding: 0 0 50px 357px;
+
+	@media (max-width: 991px)
+    {
+        & {
+            padding: 0 0 30px;
+        }
+    }
 }
 
 h1, h2, h3, h5, h6,
