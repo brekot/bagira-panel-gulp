@@ -1,0 +1,28 @@
+.banner-one {
+    background: url(../img/banner-one/bg.png) center / cover no-repeat $color-black;
+    padding: 45px 35px 45px 55px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @supports (background-image:-webkit-image-set(url(../img/banner-one/bg.webp)))
+    {
+        & {
+            background-image: url(../img/banner-one/bg.webp);
+        }
+    }
+
+    &__title {
+        width: calc(100% - 300px);
+        font-size: 20px;
+        line-height: 1.1;
+        color: $color-white;
+    }
+    &__green {
+        color: $color-main;
+    }
+    &__btn {
+        width: 245px;
+    }
+}
