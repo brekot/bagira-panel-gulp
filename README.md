@@ -1,4 +1,5 @@
-<a href="https://brekot.github.io/bagira-panel-gulp/">Страница</a><br>
+<a href="https://brekot.github.io/bagira-panel-gulp/">Главная страница</a><br>
+<a href="https://brekot.github.io/bagira-panel-gulp/index-warning.html">Предупреждение об отключении или уведомление об отключении</a><br>
 
 <hr>
 

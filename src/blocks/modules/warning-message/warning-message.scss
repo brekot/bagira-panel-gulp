@@ -1,0 +1,104 @@
+.warning-message {
+    background-color: $color-white;
+    border-radius: 40px;
+    margin: 0 0 40px;
+    display: flex;
+    position: relative;
+
+    &__left {
+        width: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid $color-gray1;
+    }
+    &__pict {
+        border: 2px solid $color-black;
+        fill: $color-black;
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__icon {
+        width: 16px;
+        height: 18px;
+    }
+    &__block {
+        padding: 32px 30px;
+        font-size: 16px;
+        line-height: 1.37;
+        width: calc(100% - 300px);
+    }
+    &__number {
+        font-weight: 600;
+    }
+    &__color-main {
+        font-weight: 700;
+        color: $color-main;
+    }
+    &__btn {
+        width: 215px;
+        padding: 0 65px 0 0;
+        display: flex;
+        align-items: center;
+    }
+    &__close {
+        fill: $color-black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+
+        &:hover {
+            fill: $color-main;
+        }
+        &-icon {
+            height: 10px;
+            width: 10px;
+        }
+    }
+
+    @media (min-width: 1000px) AND (max-width: 1250px)
+    {
+        &__left {
+            width: 70px;
+        }
+        &__block {
+            padding: 20px;
+            font-size: 15px;
+            width: calc(100% - 260px);
+        }
+        &__btn {
+            width: 190px;
+            padding: 0 50px 0 0;
+        }
+    }
+    @media (max-width: 859px)
+    {
+        & {
+            margin: 0 0 35px;
+            flex-direction: column;
+            padding: 19px 27px 24px;
+
+            &__left {
+                display: none;
+            }
+            &__block {
+                padding: 0 20px 10px 0;
+                font-size: 15px;
+                width: 100%;
+            }
+            &__btn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
+}
