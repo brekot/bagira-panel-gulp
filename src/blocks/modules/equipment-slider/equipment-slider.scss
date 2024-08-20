@@ -1,0 +1,21 @@
+.equipment-slider {
+    margin: 0 0 60px;
+    position: relative;
+
+    .equipment-slider__str {
+        position: absolute;
+        top: 50%;
+        translate: 0 -50%;
+
+        &_prev {
+            left: -55px;
+        }
+        &_next {
+            right: -55px;
+        }
+        &_disabled {
+            opacity: 0;
+            cursor: default;
+        }
+    }
+}

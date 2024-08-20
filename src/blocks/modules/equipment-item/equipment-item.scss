@@ -1,0 +1,25 @@
+.equipment-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+
+    &__block {
+        position: absolute;
+        padding: 0 25px 20px;
+        bottom: 0;
+        left: 0;
+        line-height: 1;
+        font-weight: 600;
+    }
+    &__name {
+        font-size: 17px;
+        margin: 0 0 5px;
+        color: $color-white;
+    }
+    &__price_black {
+        color: $color-black;
+    }
+}

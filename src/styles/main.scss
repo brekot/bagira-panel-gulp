@@ -1,3 +1,6 @@
+// Библиотеки
+@import "../../node_modules/swiper/swiper";
+
 // Основное
 @import "base/fonts";
 @import "base/variables";
@@ -6,6 +9,7 @@
 
 // Общие элементы
 @import "elems/btns";
+@import "elems/str-link";
 
 // БЭМ-блоки
 @import "../blocks/modules";

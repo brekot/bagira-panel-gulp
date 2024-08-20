@@ -1,0 +1,27 @@
+.str-link {
+
+    &__icon {
+        box-shadow: 0 0 20px $block-shadow;
+        background-color: $color-white;
+        fill: $color-black;
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .5s;
+
+        &_next {
+            rotate: 180deg;
+        }
+    }
+    &:hover &__icon {
+        fill: $color-main;
+        box-shadow: 0 0 5px $block-shadow;
+    }
+    &__str {
+        width: 7px;
+        height: 11px;
+    }
+}
