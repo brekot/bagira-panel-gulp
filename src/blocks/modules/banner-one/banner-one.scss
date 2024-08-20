@@ -14,7 +14,7 @@
     }
 
     &__title {
-        width: calc(100% - 300px);
+        width: calc(100% - 260px);
         font-size: 20px;
         line-height: 1.1;
         color: $color-white;
@@ -24,5 +24,33 @@
     }
     &__btn {
         width: 245px;
+    }
+
+    @media (min-width: 1000px) AND (max-width: 1249px)
+    {
+        & {
+            padding: 25px;
+    
+            &__title {
+                font-size: 18px;
+            }
+        }
+    }
+    @media (max-width: 859px)
+    {
+        & {
+            padding: 60px 25px 25px;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &__title {
+                font-size: 18px;
+                margin: 0 0 10px;
+                width: 100%;
+            }
+            &__btn {
+                width: 100%;
+            }
+        }
     }
 }

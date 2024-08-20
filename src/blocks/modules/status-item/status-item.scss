@@ -1,0 +1,32 @@
+.status-item {
+    border-radius: 13px;
+    height: 26px;
+    padding: 0 15px;
+    font-weight: 600;
+    font-size: 12px;
+    color: $color-white;
+    background-color: $color-black;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    &::before {
+        content: '';
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+    }
+    &_active::before {
+        background-color: $color-main;
+    }
+    &_noactive::before {
+        background-color: $color-danger;
+    }
+
+    @media (max-width: 859px)
+    {
+        & {
+            padding: 0 8px;
+        }
+    }
+}

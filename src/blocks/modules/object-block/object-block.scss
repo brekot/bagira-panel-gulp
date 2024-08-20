@@ -1,0 +1,239 @@
+.object-blocks {
+    margin: 0 0 35px;
+
+    @media (max-width: 859px)
+    {
+        & {
+            margin: 0 0 30px;
+        }
+    }
+}
+
+.object-block {
+    display: flex;
+
+    &__part {
+
+        &_left {
+            width: calc(100% - 325px);
+            padding: 28px 40px 30px 35px;
+        }
+        &_right {
+            border-left: 1px solid $color-gray1;
+            width: 325px;
+            padding: 32px 35px 35px;
+        }
+    }
+    &__select {
+        margin: 0 0 25px;
+    }
+
+    @media (min-width: 1000px) AND (max-width: 1249px)
+    {
+        & {
+            flex-direction: column;
+ 
+            &__part {
+        
+                &_left,
+                &_right {
+                    width: 100%;
+                }
+                &_right {
+                    border-left: none;
+                    border-top: 1px solid $color-gray1;
+                }
+            }
+        }
+    }
+    @media (max-width: 859px)
+    {
+        & {
+            flex-direction: column;
+
+            &__part {
+        
+                &_left {
+                    width: 100%;
+                    padding: 26px 27px 18px;
+                }
+                &_right {
+                    width: auto;
+                    border-left: none;
+                    border-top: 1px solid $color-gray1;
+                    padding: 18px 0 27px;
+                    margin: 0 27px;
+                }
+            }
+            &__select {
+                margin: 0 0 17px;
+            }
+        }
+    }
+}
+
+.object-block-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 17px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    @media (max-width: 859px)
+    {
+        & {
+            margin: 0 0 14px;
+
+            &__title {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.object-block-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+
+    &__item {
+        display: flex;
+        gap: 15px;
+    }
+    &__icon {
+        height: 26px;
+        width: 26px;
+        min-width: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 4px 0 0;
+
+        &_addr {
+            fill: $color-main;
+            stroke: $color-main;
+        }
+        &_filter {
+            fill: $color-main;
+        }
+        &_ruble {
+            fill: $color-main;
+            border-radius: 50%;
+            padding: 4px;
+            border: 2px solid $color-main;
+        }
+    }
+    &__svg {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    &__block {
+        line-height: 1.2;
+    }
+    &__label {
+        font-weight: 600;
+    }
+    &__value {
+        font-size: 14px;
+        color: $color-gray3;
+    }
+    &__history {
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    @media (max-width: 859px)
+    {
+        & {
+            gap: 22px;
+
+            &__label {
+                margin: 0 0 3px;
+            }
+            &__history {
+                position: static;
+            }
+        }
+    }
+}
+
+.object-block-price {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        padding: 0 0 20px;
+        margin: 0 0 auto;
+
+        &-svg {
+            width: 26px;
+            height: 22px;
+        }
+        &-label {
+            font-weight: 600;
+        }
+        &-value {
+            font-weight: 700;
+            font-size: 18px;
+            color: $color-main;
+        }
+    }
+    &__bottom {
+        border-top: 1px solid $color-gray1;
+        padding: 20px 0 0;
+    }
+
+    @media (max-width: 859px)
+    {
+        &__top {
+            padding: 0;
+        }
+        &__bottom {
+            border: none;
+            padding: 17px 0 0;
+        }
+    }
+}
+
+.object-block-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 35px;
+
+    &__info {
+        line-height: 1.2;
+    }
+    &__label {
+        color: $color-gray3;
+    }
+    &__value {
+        font-weight: 700;
+    }
+    &__sum {
+        font-weight: 700;
+        font-size: 24px;
+        color: $color-main;
+    }
+
+    @media (max-width: 859px)
+    {
+        & {
+            margin: 0 0 20px;
+        }
+    }
+}

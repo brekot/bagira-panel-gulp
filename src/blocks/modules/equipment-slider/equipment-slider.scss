@@ -2,7 +2,7 @@
     margin: 0 0 60px;
     position: relative;
 
-    .equipment-slider__str {
+    &__str {
         position: absolute;
         top: 50%;
         translate: 0 -50%;
@@ -16,6 +16,28 @@
         &_disabled {
             opacity: 0;
             cursor: default;
+        }
+    }
+
+    @media (max-width: 1499px)
+    {
+        &__str {
+            display: none;
+        }
+    }
+    @media (max-width: 859px)
+    {
+        & {
+            margin: 0 -15px 40px;
+            padding: 0 15px;
+            overflow: hidden;
+
+            &__slider {
+                overflow: visible;
+            }
+            &__slide {
+                width: 255px;
+            }
         }
     }
 }

@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Багира (Главная)</title>
-        <meta name="theme-color" content="#3dae2b">
-        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-        <link rel="stylesheet" href="local/css/main.css">
-    </head>
-    <body>
-        @@include("../blocks/modules/panel-left/panel-left.html")
-        <div class="container">
-            @@include("../blocks/modules/panel-top/panel-top.html", { "showBack" : true })
-            @@include("../blocks/modules/back-link/back-link-mobile.html")
-        </div>
-        @@include("../blocks/modules/full-shadow/full-shadow.html")
-        <script src="local/js/main.js"></script>
-    </body>
-</html>
+@@include("../blocks/modules/main/header.html", { "title" : "Багира (Главная)" })
+@@include("../blocks/modules/panel-top/panel-top.html", { "showBack" : true })
+@@include("../blocks/modules/back-link/back-link-mobile.html")
+@@include("../blocks/modules/equipment-slider/equipment-slider.html")
+@@include("../blocks/modules/object-block/object-block.html")
+@@include("../blocks/modules/banner-one/banner-one.html")
+@@include("../blocks/modules/main/footer.html")

@@ -3,18 +3,18 @@ import Swiper from 'swiper/bundle';
 if (document.querySelector('.equipment-slider__slider'))
 {
     new Swiper('.equipment-slider__slider', {
-        slidesPerView: 1,
-        spaceBetween: 10,
+        slidesPerView: 'auto',
+        spaceBetween: 15,
         breakpoints: {
-            576: {
+            860: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1000: {
                 slidesPerView: 2,
                 spaceBetween: 20,
             },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 30,
-            },
-            991: {
+            1250: {
                 slidesPerView: 3,
                 spaceBetween: 20,
             },
