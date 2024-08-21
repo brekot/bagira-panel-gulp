@@ -1,0 +1,31 @@
+.object-list {
+    margin: 0 0 30px;
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    &__item {
+        width: calc(33.3% - 16px);
+    }
+
+    @media (min-width: 1000px) AND (max-width: 1249px)
+    {
+        &__item {
+            width: calc(50% - 12px);
+        }
+    }
+    @media (min-width: 576px) AND (max-width: 859px)
+    {
+        &__item {
+            width: calc(50% - 12px);
+        }
+    }
+    @media (max-width: 575px)
+    {
+        &__item {
+            width: 100%;
+        }
+    }
+}

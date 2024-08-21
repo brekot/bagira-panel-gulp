@@ -3705,9 +3705,9 @@ bem-tools-create@bem-tools/bem-tools-create:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001317, caniuse-lite@npm:^1.0.30001332":
-  version: 1.0.30001332
-  resolution: "caniuse-lite@npm:1.0.30001332"
-  checksum: 10/40ac7ab8f76561ddf3e2852b53b4fa7c465e03472000003fea5cf29d59b1b79062872d91fefa060a4052631bf0ff58694b97364e873d3384ccfe5da2305586f1
+  version: 1.0.30001651
+  resolution: "caniuse-lite@npm:1.0.30001651"
+  checksum: 10/fe4857b2a91a9cb77993eec9622de68bea0df17c31cb9584ca5c562f64bb3b8fda316d898aa3b1ee3ee9f7d80f6bf13c42acb09d9a56a1a6c64afaf7381472fa
   languageName: node
   linkType: hard
 

@@ -2,6 +2,8 @@
 <a href="https://brekot.github.io/bagira-panel-gulp/index-warning.html">Предупреждение об отключении или уведомление об отключении</a><br>
 <a href="https://brekot.github.io/bagira-panel-gulp/balance.html">Пополнить баланс</a><br>
 <br>
+<a href="https://brekot.github.io/bagira-panel-gulp/objects.html">Охраняемые объекты</a><br>
+<br>
 <a href="https://brekot.github.io/bagira-panel-gulp/equipment.html">Оборудования и услуги</a><br>
 
 <hr>
