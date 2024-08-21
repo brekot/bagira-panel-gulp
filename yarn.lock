@@ -1387,10 +1387,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fancyapps/ui@npm:^4.0.26":
-  version: 4.0.26
-  resolution: "@fancyapps/ui@npm:4.0.26"
-  checksum: 10/4a6ac14a79c380d4020cb8bcfe92fd50b976b0986371fd984740aa4205a15957706f15c7564b3a2cbfcfbf1b801ecbb2dfcdca75a935915535c455042409c987
+"@fancyapps/ui@npm:^5.0.36":
+  version: 5.0.36
+  resolution: "@fancyapps/ui@npm:5.0.36"
+  checksum: 10/d66d0ad3fd9f6e33efa3515edcb355111d41506094e771cff8d30e8a0bb92fe8ee718fdce52bd51ed42fca2c2ae5a202ca7a8cb2e564bd6e28e1d21d27edd07e
   languageName: node
   linkType: hard
 
@@ -5016,15 +5016,6 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
-"dom7@npm:^4.0.4":
-  version: 4.0.4
-  resolution: "dom7@npm:4.0.4"
-  dependencies:
-    ssr-window: "npm:^4.0.0"
-  checksum: 10/80b2fd1cf92d85db9c57eb996aa7acecb03498d799f2c6089368246abce559c19c49af06c30095f174b3edbc149f4852168b1fde56702bd0965317733f38c701
-  languageName: node
-  linkType: hard
-
 "domelementtype@npm:1":
   version: 1.3.1
   resolution: "domelementtype@npm:1.3.1"
@@ -7586,7 +7577,7 @@ bem-tools-create@bem-tools/bem-tools-create:
     "@babel/eslint-parser": "npm:^7.17.0"
     "@babel/preset-env": "npm:^7.16.11"
     "@babel/register": "npm:^7.17.0"
-    "@fancyapps/ui": "npm:^4.0.26"
+    "@fancyapps/ui": "npm:^5.0.36"
     babel-loader: "npm:^8.2.3"
     bem-tools-core: bem-tools/bem-tools-core
     bem-tools-create: bem-tools/bem-tools-create
@@ -7627,7 +7618,7 @@ bem-tools-create@bem-tools/bem-tools-create:
     stylelint-config-standard-scss: "npm:^3.0.0"
     stylelint-order: "npm:^5.0.0"
     stylelint-selector-bem-pattern: "npm:^2.1.1"
-    swiper: "npm:^8.1.4"
+    swiper: "npm:^11.1.10"
     webpack: "npm:^5.70.0"
     webpack-stream: "npm:^7.0.0"
     yargs: "npm:^17.3.1"
@@ -13428,13 +13419,6 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
-"ssr-window@npm:^4.0.0, ssr-window@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "ssr-window@npm:4.0.2"
-  checksum: 10/075b67794be868103d73299be948cd559be7b40499fe4247c7a28702f9f1588c53ca8de64520ae8e36214caa6ff728b222101d7e75d5df39e7ff12e148d6a517
-  languageName: node
-  linkType: hard
-
 "ssri@npm:^9.0.0":
   version: 9.0.0
   resolution: "ssri@npm:9.0.0"
@@ -14086,13 +14070,10 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
-"swiper@npm:^8.1.4":
-  version: 8.1.4
-  resolution: "swiper@npm:8.1.4"
-  dependencies:
-    dom7: "npm:^4.0.4"
-    ssr-window: "npm:^4.0.2"
-  checksum: 10/399e3635e3165860908c83f4ec86609f2fc726dbbf7df49befb15c02736d86a285e1cf4761bc6c7d6d978ae678445beb6ef7625cca101ab89f8d8fa05376c37c
+"swiper@npm:^11.1.10":
+  version: 11.1.10
+  resolution: "swiper@npm:11.1.10"
+  checksum: 10/02021d1e4095ff54cbf705e0693405db7f866a998ca53d518594739da98be17e1189d8419b9efe9a6132d10c63b486f62b3012c76e18b19a58cbe4404772d964
   languageName: node
   linkType: hard
 

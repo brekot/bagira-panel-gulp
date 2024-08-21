@@ -1,0 +1,22 @@
+<div class="window-block window-block_short" id="windowPay">
+    <div class="window-pay">
+        <div class="window-pay__title">
+            Выберите период<br>
+            для оплаты
+        </div>
+        <form action="" method="post">
+            <div class="window-pay__select">
+                @@include("../select-input/select-pay.html")
+            </div>
+            <div class="window-pay__btn">
+                <button type="submit" class="btn btn_main">Оплатить онлайн</button>
+                <button type="submit" class="btn btn_main">Сформировать счет</button>
+            </div>
+        </form>
+    </div>
+    <a href="javascript:;" data-fancybox-close class="window-block__close">
+        <svg class="window-block__close-icon">
+            <use xlink:href="local/img/sprites/sprite.svg#close"></use>
+        </svg>
+    </a>
+</div>

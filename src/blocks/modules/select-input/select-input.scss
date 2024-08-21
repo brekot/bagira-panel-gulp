@@ -42,6 +42,7 @@
         display: none;
         flex-direction: column;
         border-radius: 25px;
+        overflow: hidden;
     }
     &__item {
         order: 2;

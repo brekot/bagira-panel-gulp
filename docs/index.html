@@ -271,11 +271,42 @@
                         </div>
                         <div class="object-block-total__sum">2 100 ₽</div>
                     </div>
-                    <a href="javascript:;" class="btn btn_main">Пополнить</a>
+                    <a href="#windowPay" class="btn btn_main" data-fancybox-window>Пополнить</a>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div class="window-block window-block_short" id="windowPay">
+    <div class="window-pay">
+        <div class="window-pay__title">
+            Выберите период<br>
+            для оплаты
+        </div>
+        <form action="" method="post">
+            <div class="window-pay__select">
+                <div class="select-input">
+    <select class="select-input__select">
+        <option value="">1 месяц</option>
+        <option value="">3 месяца</option>
+        <option value="">6 месяцев</option>
+    </select>
+    <svg class="select-input__str">
+        <use xlink:href="local/img/sprites/sprite.svg#str"></use>
+    </svg>
+</div>
+            </div>
+            <div class="window-pay__btn">
+                <button type="submit" class="btn btn_main">Оплатить онлайн</button>
+                <button type="submit" class="btn btn_main">Сформировать счет</button>
+            </div>
+        </form>
+    </div>
+    <a href="javascript:;" data-fancybox-close class="window-block__close">
+        <svg class="window-block__close-icon">
+            <use xlink:href="local/img/sprites/sprite.svg#close"></use>
+        </svg>
+    </a>
 </div>
 <div class="banner-one">
     <div class="banner-one__title">
