@@ -15,14 +15,14 @@
         font-size: 17px;
         font-weight: 600;
         opacity: .7;
-
-        &:hover,
-        &_active {
-            fill: $color-main;
-            stroke: $color-main;
-            color: $color-black;
-            opacity: 1;
-        }
+    }
+    &__link:hover,
+    &__link_active,
+    &_full-active:not(:hover) &__link {
+        fill: $color-main;
+        stroke: $color-main;
+        color: $color-black;
+        opacity: 1;
     }
     &__pict {
         height: 24px;
@@ -47,7 +47,8 @@
         }
     }
     &__link:hover &__pict_num3,
-    &__link_active &__pict_num3 {
+    &__link_active &__pict_num3,
+    &_full-active:not(:hover) &__pict_num3 {
         border-color: $color-main;
     }
     &__icon {

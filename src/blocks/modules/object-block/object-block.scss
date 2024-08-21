@@ -1,16 +1,6 @@
-.object-blocks {
-    margin: 0 0 35px;
-
-    @media (max-width: 859px)
-    {
-        & {
-            margin: 0 0 30px;
-        }
-    }
-}
-
 .object-block {
     display: flex;
+    margin: 0 0 35px;
 
     &__part {
 
@@ -25,7 +15,7 @@
         }
     }
     &__select {
-        margin: 0 0 25px;
+        margin: -13px 0 25px;
     }
 
     @media (min-width: 1000px) AND (max-width: 1249px)
@@ -49,6 +39,7 @@
     @media (max-width: 859px)
     {
         & {
+            margin: 0 0 30px;
             flex-direction: column;
 
             &__part {
@@ -76,12 +67,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 0 17px;
+    margin: 0 0 30px;
 
     &__title {
         font-weight: 600;
         font-size: 18px;
         line-height: 1;
+    }
+    &__order {
+        margin: 5px 0 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1;
+        color: $color-main;
     }
 
     @media (max-width: 859px)

@@ -3,7 +3,8 @@
         <img src="local/img/logo.svg" alt="logo" width="357" height="171">
     </a>
     <div class="panel-left__menu">
-        @@include("../menu-main/menu-main.html")
+        @@if (menu === 'main') { @@include("../menu-main/menu-main.html") }
+        @@if (menu === 'balance') { @@include("../menu-main/menu-main-balance.html") }
     </div>
     <div class="panel-left__bottom">
         <div class="panel-left__bottom-title">
