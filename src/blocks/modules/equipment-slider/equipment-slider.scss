@@ -2,6 +2,15 @@
     margin: 0 0 60px;
     position: relative;
 
+    &__slide {
+        transition: opacity .5s;
+    }
+    &__slider:hover &__slide {
+        opacity: .3;
+    }
+    &__slider &__slide:hover {
+        opacity: 1;
+    }
     &__str {
         position: absolute;
         top: 50%;
