@@ -15,7 +15,7 @@
         }
     }
     &__select {
-        margin: -13px 0 25px;
+        margin: 0 0 25px;
     }
 
     @media (min-width: 1000px) AND (max-width: 1249px)
@@ -67,8 +67,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 0 30px;
+    margin: 0 0 17px;
 
+    &_order {
+        margin: 0 0 30px;
+    }
     &__title {
         font-weight: 600;
         font-size: 18px;
@@ -87,6 +90,11 @@
         & {
             margin: 0 0 14px;
 
+            &_order {
+                margin: 0 0 20px;
+                border-bottom: 1px solid $color-gray1;
+                padding: 0 0 20px;
+            }
             &__title {
                 font-size: 16px;
             }
