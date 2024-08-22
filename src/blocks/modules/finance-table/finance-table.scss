@@ -1,0 +1,73 @@
+.finance-table {
+    color: $color-gray3;
+    line-height: 1.4;
+    width: 100%;
+
+    & th,
+    & td {
+        padding: 20px;
+        vertical-align: top;
+
+        &:first-child {
+            padding-left: 44px;
+        }
+    }
+    & th {
+        font-weight: 500;
+    }
+    & td {
+        border-top: 1px solid $color-bg;
+    }
+    & b {
+        font-weight: 600;
+        color: $color-black;
+    }
+    &__label {
+        display: none;
+    }
+    &__date {
+        color: $color-black;
+    }
+    &__price {
+        font-weight: 700;
+        font-size: 16px;
+        white-space: nowrap;
+
+        &_green {
+            color: $color-main;
+        }
+        &_red {
+            color: $color-danger;
+        }
+    }
+    &__text {
+        font-weight: 400;
+    }
+
+    @media (max-width: 575px)
+    {
+        & thead {
+            display: none;
+        }
+        & tr {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        & td:nth-child(1),
+        & td:nth-child(2) {
+            width: 50%;
+            padding: 27px 15px 0;
+        }
+        & td:nth-child(3) {
+            width: 100%;
+            padding: 23px 15px 27px;
+            border: none;
+        }
+        & tr:first-child td {
+            border: none;
+        }
+        &__label {
+            display: inline;
+        }
+    }
+}
