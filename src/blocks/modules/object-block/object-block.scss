@@ -125,14 +125,9 @@
             fill: $color-main;
             stroke: $color-main;
         }
-        &_filter {
-            fill: $color-main;
-        }
+        &_filter,
         &_ruble {
             fill: $color-main;
-            border-radius: 50%;
-            padding: 4px;
-            border: 2px solid $color-main;
         }
     }
     &__svg {

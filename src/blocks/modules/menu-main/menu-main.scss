@@ -32,24 +32,10 @@
         justify-content: center;
 
         &_num2,
+        &_num3,
         &_num4 {
             stroke: none;
         }
-        &_num3 {
-            border-radius: 50%;
-            padding: 4px;
-            border: 2px solid $color-black;
-            stroke: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: .5s;
-        }
-    }
-    &__link:hover &__pict_num3,
-    &__link_active &__pict_num3,
-    &_full-active:not(:hover) &__pict_num3 {
-        border-color: $color-main;
     }
     &__icon {
         max-height: 100%;
