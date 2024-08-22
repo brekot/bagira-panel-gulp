@@ -3,6 +3,19 @@
 <div class="container">
     @@include("../blocks/modules/panel-top/panel-top.html", { "showBack" : true })
     @@include("../blocks/modules/back-link/back-link-mobile.html")
-    @@include("../blocks/modules/finance-block/finance-block.html")
+    @@include("../blocks/modules/finance-panel/finance-panel.html")
+    @@include("../blocks/modules/tabs-panel/tabs-panel-finance.html")
+    <div data-tabs-block="tab1">
+        @@include("../blocks/modules/finance-block/finance-block.html")
+    </div>
+    <div data-tabs-block="tab2" class="d-none">
+        Tab 2
+    </div>
+    <div data-tabs-block="tab3" class="d-none">
+        Tab 3
+    </div>
+    <div data-tabs-block="tab4" class="d-none">
+        Tab 4
+    </div>
 </div>
 @@include("../blocks/modules/main/footer.html")

@@ -147,7 +147,41 @@
     <span class="back-link__name">Обратно</span>
 </a>
 </div>
-    <div class="finance-block">
+    <div class="finance-panel">
+    <div class="block-title">
+        Финансы и документы
+    </div>
+    <div class="finance-panel__block block-style">
+        <div class="finance-panel__title">Выберите договор</div>
+        <div class="finance-panel__select">
+            <div class="select-input">
+    <select class="select-input__select">
+        <option value="">№77-1719-58933</option>
+        <option value="" selected>№76-1720-58920</option>
+        <option value="">№76-1720-58921</option>
+    </select>
+    <svg class="select-input__str">
+        <use xlink:href="local/img/sprites/sprite.svg#str"></use>
+    </svg>
+</div>
+        </div>
+        <div class="finance-panel__status">
+            <div class="status-item status-item_active">
+    Активно
+</div>
+        </div>
+    </div>
+</div>
+    <div class="tabs-panel">
+    <div class="tabs-panel__links">
+        <a href="javascript:;" data-tabs-link="tab1" class="tabs-panel__link tabs-panel__link_active">История платежей</a>
+        <a href="javascript:;" data-tabs-link="tab2" class="tabs-panel__link">Счета</a>
+        <a href="javascript:;" data-tabs-link="tab3" class="tabs-panel__link">Акты</a>
+        <a href="javascript:;" data-tabs-link="tab4" class="tabs-panel__link">Договоры</a>
+    </div>
+</div>
+    <div data-tabs-block="tab1">
+        <div class="finance-block block-style">
     <table class="finance-table">
     <thead>
         <tr>
@@ -264,6 +298,16 @@
     </tbody>
 </table>
 </div>
+    </div>
+    <div data-tabs-block="tab2" class="d-none">
+        Tab 2
+    </div>
+    <div data-tabs-block="tab3" class="d-none">
+        Tab 3
+    </div>
+    <div data-tabs-block="tab4" class="d-none">
+        Tab 4
+    </div>
 </div>
         <div class="full-shadow visible-opacity"></div>
         <div class="window-message">

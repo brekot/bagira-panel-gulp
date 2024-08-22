@@ -1,12 +1,6 @@
-.finance-block {
-    box-shadow: 0 0 40px $block-shadow;
-    background-color: $color-white;
-    border-radius: 40px;
-
-    @media (max-width: 575px)
-    {
-        & {
-            margin: 0 -15px;
-        }
+@media (max-width: 575px)
+{
+    .finance-block {
+        margin: 0 -15px;
     }
 }
