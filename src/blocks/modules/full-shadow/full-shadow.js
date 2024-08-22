@@ -5,6 +5,8 @@ window.showFullShadow = function(block)
     elem.classList.add('visible-opacity_show');
 
     elem.dataset.block = block;
+
+    document.querySelector('body').classList.add('overflow-hidden');
 }
 
 window.hideFullShadow = function()
@@ -14,6 +16,8 @@ window.hideFullShadow = function()
     elem.dataset.block = '';
 
     elem.classList.remove('visible-opacity_show');
+
+    document.body.classList.remove('overflow-hidden');
 }
 
 document.querySelector('.full-shadow').addEventListener('click', (e) => {
@@ -21,6 +25,4 @@ document.querySelector('.full-shadow').addEventListener('click', (e) => {
     const event = new Event('click');
 
     document.querySelector('.' + e.target.dataset.block).dispatchEvent(event);
-
-    hideFullShadow();
 });

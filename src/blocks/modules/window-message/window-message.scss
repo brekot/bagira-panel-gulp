@@ -1,0 +1,121 @@
+.window-message {
+    background-color: $color-white;
+    box-shadow: 0 0 40px $block-shadow;
+    width: 640px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 13;
+    right: 0;
+    translate: 100% 0;
+    transition: 1s;
+
+    &_show {
+        translate: 0;
+    }
+    &__head {
+        height: 116px;
+        display: flex;
+        align-items: center;
+        padding: 0 45px 0 50px;
+        font-size: 22px;
+        font-weight: 700;
+        position: relative;
+        border-bottom: 1px solid $color-gray1;
+
+        &-line {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+            padding: 0 35px 0 0;
+        }
+    }
+    &__items {
+        height: calc(100% - 116px);
+        overflow: auto;
+    }
+    &__item {
+        border-bottom: 1px solid $color-gray1;
+        padding: 30px 45px 45px 50px;
+    }
+
+    @media (max-width: 999px)
+    {
+        & {
+            width: 100%;
+
+            &__head {
+                height: 112px;
+                padding: 30px 15px 0 15px;
+                font-size: 19px;
+
+                &-line {
+                    gap: 10px;
+                }
+            }
+            &__item {
+                padding: 25px 15px 30px;
+            }
+        }
+    }
+}
+
+.message-item {
+    position: relative;
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.37;
+        margin: 0 0 15px;
+        padding: 0 35px 0 0;
+
+        & b {
+            font-weight: 600;
+        }
+    }
+    &__btn {
+        width: 245px;
+    }
+
+    @media (max-width: 999px)
+    {
+        &__text {
+            font-size: 15px;
+            line-height: 1.47;
+            margin: 0 0 20px;
+        }
+    }
+    @media (max-width: 575px)
+    {
+        &__btn {
+            width: 100%;
+        }
+    }
+}
+
+.window-message-close {
+    fill: $color-black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    right: -15px;
+    position: absolute;
+    top: -10px;
+
+    &:hover {
+        fill: $color-main;
+    }
+    &_window {
+        top: 50%;
+        translate: 0 -50%;
+    }
+    &__icon {
+        height: 15px;
+        width: 15px;
+    }
+}
