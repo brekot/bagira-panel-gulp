@@ -1,0 +1,48 @@
+.form-one {
+
+    &__line {
+        margin: 0 0 20px;
+    }
+    &__label {
+        font-weight: 600;
+        margin: 0 0 10px;
+    }
+    &__input {
+        background-color: $color-input;
+        border-radius: 10px;
+        height: 42px;
+        border: 1px solid $color-input;
+        padding: 0 15px;
+        width: 100%;
+        font-weight: 500;
+        transition: .5s;
+
+        &:hover,
+        &:focus {
+            border-color: $color-main;
+        }
+        &:user-invalid {
+            border-color: $color-danger;
+        }
+    }
+    &__input_textarea {
+        height: 130px;
+        resize: none;
+        padding: 15px;
+        line-height: 1.1;
+    }
+
+    @media (min-width: 576px)
+    {
+        &__input {
+            padding: 0 20px;
+            font-size: 14px;
+        }
+        &__input_textarea {
+            padding: 15px 20px;
+        }
+        &__btn {
+            width: 206px;
+        }
+    }
+}

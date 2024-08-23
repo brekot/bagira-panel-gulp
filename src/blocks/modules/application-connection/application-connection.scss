@@ -1,0 +1,47 @@
+.application-connection-top {
+
+    &__title {
+        margin: 0 0 10px;
+    }
+    &__desc {
+        font-size: 14px;
+        line-height: 1.3;
+        color: $color-gray4;
+    }
+}
+
+.application-connection-bottom {
+
+    &__label {
+        font-weight: 600;
+        line-height: 1;
+    }
+    &__link {
+        font-weight: 700;
+        font-size: 22px;
+        text-decoration: none;
+    }
+    &__link:hover {
+        color: $color-main-hover;
+    }
+}
+
+@media (max-width: 575px)
+{
+    .application-connection-top {
+        order: 1;
+
+        &__desc {
+            margin: 0 0 25px;
+        }
+    }
+
+    .application-connection-bottom {
+        order: 3;
+        margin: 15px 0 0;
+    }
+
+    .application-connection-form {
+        order: 2;
+    }
+}

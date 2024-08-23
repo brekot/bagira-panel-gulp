@@ -2,4 +2,85 @@
     box-shadow: 0 0 40px $block-shadow;
     background-color: $color-white;
     border-radius: 40px;
+
+    &__parts {
+        display: flex;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.2;
+    }
+    &__bottom {
+        padding: 20px 0 0;
+        margin: auto 0 0;
+    }
+
+    @media (min-width: 576px)
+    {
+        &__part {
+
+            &_left {
+                width: 320px;
+                border-right: 1px solid $color-bg;
+                padding: 30px 45px;
+                display: flex;
+                flex-direction: column;
+            }
+            &_right {
+                width: calc(100% - 320px);
+                padding: 30px 50px 30px 55px;
+            }
+        }
+    }
+    @media (min-width: 1000px) AND (max-width: 1249px)
+    {
+        &__part {
+
+            &_left {
+                width: 270px;
+                padding: 25px;
+            }
+            &_right {
+                width: calc(100% - 270px);
+                padding: 25px;
+            }
+        }
+    }
+    @media (min-width: 576px) AND (max-width: 859px)
+    {
+        &__part {
+
+            &_left {
+                width: 270px;
+                padding: 25px;
+            }
+            &_right {
+                width: calc(100% - 270px);
+                padding: 25px;
+            }
+        }
+    }
+    @media (max-width: 575px)
+    {
+        &__parts {
+            flex-direction: column;
+            padding: 25px 25px 35px;
+        }
+        &__part {
+            display: contents;
+        }
+        &__title {
+            font-size: 18px;
+            line-height: 1.4;
+            padding: 0 5px 0 0;
+
+            & br {
+                display: none;
+            }
+        }
+        &__bottom {
+            padding: 10px 0 0;
+        }
+    }
 }
