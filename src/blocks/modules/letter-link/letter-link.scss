@@ -1,0 +1,10 @@
+.letter-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__icon {
+        width: 37px;
+        height: 21px;
+    }
+}

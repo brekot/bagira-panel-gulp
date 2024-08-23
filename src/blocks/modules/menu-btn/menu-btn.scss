@@ -1,0 +1,27 @@
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: $color-black;
+    width: 26px;
+    height: 26px;
+
+    &__icon {
+
+        &_open {
+            width: 26px;
+            height: 14px;
+        }
+        &_close {
+            width: 14px;
+            height: 14px;
+            display: none;
+        }
+    }
+    &_open &__icon_open {
+        display: none;
+    }
+    &_open &__icon_close {
+        display: block;
+    }
+}
