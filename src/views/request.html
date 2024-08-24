@@ -1,0 +1,27 @@
+@@include("../blocks/modules/main/header.html", { "title" : "Багира (Обращения)" })
+@@include("../blocks/modules/panel-left/panel-left.html", { "menu" : "request" })
+<div class="container">
+    @@include("../blocks/modules/panel-top/panel-top.html", { "showBack" : true })
+    @@include("../blocks/modules/back-link/back-link-mobile.html")
+    <div class="block-title">
+        №77-1719-58933
+        @@include("../blocks/modules/status-item/status-item-active.html")
+    </div>
+    @@include("../blocks/modules/tabs-panel/tabs-panel-request.html")
+    <div data-tabs-block="tab1">
+        @@include("../blocks/modules/request-list/request-list.html")
+    </div>
+    <div data-tabs-block="tab2" class="d-none">
+        @@include("../blocks/modules/requisite-text/requisite-text.html")
+        <br>
+        <br>
+        ИЛИ
+        <br>
+        <br>
+        @@include("../blocks/modules/requisite-text/requisite-text-block.html")
+    </div>
+    <div data-tabs-block="tab3" class="d-none">
+        @@include("../blocks/modules/request-form/request-form.html")
+    </div>
+</div>
+@@include("../blocks/modules/main/footer.html")

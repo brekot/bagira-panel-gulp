@@ -3,10 +3,7 @@
         <img src="local/img/logo.svg" alt="logo" width="357" height="171">
     </a>
     <div class="panel-left__menu">
-        @@if (menu === 'main') { @@include("../menu-main/menu-main.html") }
-        @@if (menu === 'balance') { @@include("../menu-main/menu-main-balance.html") }
-        @@if (menu === 'equipment') { @@include("../menu-main/menu-main-equipment.html") }
-        @@if (menu === 'finance') { @@include("../menu-main/menu-main-finance.html") }
+        @@include("../menu-main/menu-main.html", { "active" : "@@menu" })
     </div>
     <div class="panel-left__bottom">
         <div class="panel-left__bottom-title">

@@ -1,0 +1,10 @@
+.requisite-text-block {
+    padding: 30px;
+}
+
+@media (min-width: 576px)
+{
+    .requisite-text br {
+        display: none;
+    }
+}

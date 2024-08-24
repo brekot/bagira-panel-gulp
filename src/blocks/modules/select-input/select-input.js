@@ -80,7 +80,7 @@ window.styleSelect = function(x)
     }
 }
 
-styleSelect(document.querySelectorAll(".select-input"));
+if (document.querySelector(".select-input")) styleSelect(document.querySelectorAll(".select-input"));
 
 function closeAllSelect(elem)
 {

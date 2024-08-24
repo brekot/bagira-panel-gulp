@@ -6,6 +6,13 @@
     &__parts {
         display: flex;
     }
+    &__part {
+
+        &_gray {
+            background-color: $color-bg;
+            border-radius: 40px 0 0 40px;
+        }
+    }
     &__title {
         font-weight: 600;
         font-size: 22px;
@@ -69,6 +76,13 @@
         }
         &__part {
             display: contents;
+
+            &_gray {
+                display: block;
+                margin: -25px -25px 20px;
+                padding: 30px 25px;
+                border-radius: 40px 40px 0 0;
+            }
         }
         &__title {
             font-size: 18px;
