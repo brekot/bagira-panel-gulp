@@ -8,12 +8,13 @@
         margin: 0 0 10px;
     }
     &__input {
-        background-color: $color-input;
+        background-color: $color-bg;
+        border: 1px solid $color-bg;
         border-radius: 10px;
         height: 42px;
-        border: 1px solid $color-input;
         padding: 0 15px;
         width: 100%;
+        font-size: 14px;
         font-weight: 500;
         transition: .5s;
 
@@ -36,7 +37,7 @@
     {
         &__input {
             padding: 0 20px;
-            font-size: 14px;
+            font-size: 15px;
         }
         &__input_textarea {
             padding: 15px 20px;

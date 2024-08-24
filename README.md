@@ -7,6 +7,7 @@
 <br>
 <a href="https://brekot.github.io/bagira-panel-gulp/equipment.html">Оборудования и услуги</a><br>
 <br>
+<a href="https://brekot.github.io/bagira-panel-gulp/support.html">Служба поддержки</a><br>
 <a href="https://brekot.github.io/bagira-panel-gulp/finance-documents.html">Финансы и документы</a><br>
 
 <hr>

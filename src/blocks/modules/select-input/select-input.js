@@ -1,76 +1,86 @@
-let x = document.querySelectorAll(".select-input"),
-    l = x.length;
-
-for (let i = 0; i < l; i++)
+window.styleSelect = function(x)
 {
-    let selectElement = x[i].getElementsByTagName("select")[0],
-        ll = selectElement.length;
+    if (!x.length) x = Array(x);
 
-    let a = document.createElement("DIV");
+    let l = x.length;
 
-    a.classList.add("select-input__selector");
-    a.innerHTML = selectElement.options[selectElement.selectedIndex].innerHTML;
-    x[i].appendChild(a);
-
-    let b = document.createElement("DIV");
-
-    b.classList.add("select-input__items");
-
-    for (let j = 0; j < ll; j++)
+    for (let i = 0; i < l; i++)
     {
-        let c = document.createElement("A");
+        let select_element = x[i].querySelector("select"),
+            ll = select_element.length;
 
-        c.classList.add("select-input__item");
+        let selector = document.createElement("DIV");
+            selector.classList.add("select-input__selector");
+            x[i].appendChild(selector);
 
-        if (selectElement.selectedIndex === j)
+        let selector_span = document.createElement("SPAN");
+            selector_span.classList.add("select-input__overflow");
+            selector_span.innerHTML = select_element.options[select_element.selectedIndex].innerHTML;
+            selector.appendChild(selector_span);
+
+        let select_items = document.createElement("DIV");
+            select_items.classList.add("select-input__items");
+
+        for (let j = 0; j < ll; j++)
         {
-            c.classList.add("select-input__item_active");
-        }
+            let select_item = document.createElement("A");
+                select_item.classList.add("select-input__item");
 
-        c.innerHTML = selectElement.options[j].innerHTML;
-
-        c.addEventListener("click", (e) => {
-
-            let elem = e.target,
-                block = elem.closest(".select-input"),
-                select = block.querySelector(".select-input__select"),
-                sl = select.length;
-
-            for (let i = 0; i < sl; i++)
+            if (select_element.selectedIndex === j)
             {
-                if (select.options[i].innerHTML == elem.innerHTML)
-                {
-                    select.selectedIndex = i;
-
-                    block.querySelector(".select-input__selector").innerHTML = elem.innerHTML;
-
-                    block.querySelector(".select-input__items").querySelector(".select-input__item_active").classList.remove("select-input__item_active");
-
-                    elem.classList.add("select-input__item_active");
-
-                    break;
-                }
+                select_item.classList.add("select-input__item_active");
             }
 
-            const event = new Event('change');
+            let select_item_span = document.createElement("SPAN");
+                select_item_span.classList.add("select-input__overflow");
+                select_item_span.innerHTML = select_element.options[j].innerHTML;
+                select_item.appendChild(select_item_span);
 
-            select.dispatchEvent(event);
+            select_item.addEventListener("click", (e) => {
+
+                let elem = e.target,
+                    block = elem.closest(".select-input"),
+                    select = block.querySelector(".select-input__select"),
+                    sl = select.length;
+
+                for (let i = 0; i < sl; i++)
+                {
+                    if (select.options[i].innerHTML == elem.innerHTML)
+                    {
+                        select.selectedIndex = i;
+
+                        block.querySelector(".select-input__selector").innerHTML = elem.innerHTML;
+
+                        block.querySelector(".select-input__items").querySelector(".select-input__item_active").classList.remove("select-input__item_active");
+
+                        elem.classList.add("select-input__item_active");
+
+                        break;
+                    }
+                }
+
+                const event = new Event('change');
+
+                select.dispatchEvent(event);
+            });
+
+            select_items.appendChild(select_item);
+        }
+
+        x[i].appendChild(select_items);
+
+        selector.addEventListener("click", (e) => {
+
+            e.stopPropagation();
+
+            closeAllSelect(e.target);
+
+            e.target.closest(".select-input").classList.toggle("select-input_show");
         });
-
-        b.appendChild(c);
     }
-
-    x[i].appendChild(b);
-
-    a.addEventListener("click", (e) => {
-
-        e.stopPropagation();
-
-        closeAllSelect(e.target);
-
-        e.target.closest(".select-input").classList.toggle("select-input_show");
-    });
 }
+
+styleSelect(document.querySelectorAll(".select-input"));
 
 function closeAllSelect(elem)
 {
