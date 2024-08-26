@@ -1,0 +1,84 @@
+<div class="profile-block profile-block_data block-style">
+    <form action="" method="post">
+        <div class="profile-block__title profile-block__title_big">
+            Профиль
+        </div>
+        <div class="form-profile">
+            <div class="form-profile__line">
+                <label for="surname" class="form-profile__label">Фамилия</label>
+                <input id="surname" type="text" class="form-profile__input" name="surname" value="Иванов" required readonly>
+            </div>
+            <div class="form-profile__line">
+                <label for="name" class="form-profile__label">Имя</label>
+                <input id="name" type="text" class="form-profile__input" name="name" value="Владимир" required readonly>
+            </div>
+            <div class="form-profile__line">
+                <label for="patronymic" class="form-profile__label">Отчество</label>
+                <input id="patronymic" type="text" class="form-profile__input" name="patronymic" value="Александрович" required readonly>
+            </div>
+            <div class="form-profile__line">
+                <label for="phone" class="form-profile__label">Телефон</label>
+                <input id="phone" type="tel" class="form-profile__input" name="phone" value="8 (852) 400-00-00" required readonly>
+            </div>
+        </div>
+        <div class="profile-block__btns">
+            <div class="profile-block__btn profile-block__btn_one">
+                <button type="button" class="btn btn_main readonly-toggle">Запрос на изменение данных</button>
+            </div>
+            <div class="profile-block__btn profile-block__btn_two readonly-toggle-send d-none">
+                <button type="submit" class="btn btn_main">Отправить</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="profile-block block-style">
+    <form action="" method="post">
+        <div class="profile-block__title">
+            Смена пароля
+        </div>
+        <div class="form-profile">
+            <div class="form-profile__line">
+                <label for="password-old" class="form-profile__label">Старый пароль</label>
+                <input id="password-old" type="password" class="form-profile__input form-profile__input_password" name="password-old" value="" required>
+                <a href="javascript:;" class="form-profile__password-toggle">
+                    <svg class="form-profile__password-toggle-icon form-profile__password-toggle-icon_show">
+                        <use xlink:href="local/img/sprites/sprite.svg#pass-hide"></use>
+                    </svg>
+                    <svg class="form-profile__password-toggle-icon form-profile__password-toggle-icon_hide">
+                        <use xlink:href="local/img/sprites/sprite.svg#pass-show"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="form-profile__line">
+                <label for="password-new" class="form-profile__label">Новый пароль</label>
+                <input id="password-new" type="password" class="form-profile__input form-profile__input_password" name="password-new" value="" required>
+                <a href="javascript:;" class="form-profile__password-toggle">
+                    <svg class="form-profile__password-toggle-icon form-profile__password-toggle-icon_show">
+                        <use xlink:href="local/img/sprites/sprite.svg#pass-hide"></use>
+                    </svg>
+                    <svg class="form-profile__password-toggle-icon form-profile__password-toggle-icon_hide">
+                        <use xlink:href="local/img/sprites/sprite.svg#pass-show"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="form-profile__line">
+                <label for="password-repeat" class="form-profile__label">Повторите новый пароль</label>
+                <input id="password-repeat" type="password" class="form-profile__input form-profile__input_password" name="password-repeat" value="" required>
+                <a href="javascript:;" class="form-profile__password-toggle">
+                    <svg class="form-profile__password-toggle-icon form-profile__password-toggle-icon_show">
+                        <use xlink:href="local/img/sprites/sprite.svg#pass-hide"></use>
+                    </svg>
+                    <svg class="form-profile__password-toggle-icon form-profile__password-toggle-icon_hide">
+                        <use xlink:href="local/img/sprites/sprite.svg#pass-show"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="profile-block__btns">
+            <div class="profile-block__btn profile-block__btn_two">
+                <button type="submit" class="btn btn_main">Сохранить</button>
+            </div>
+        </div>
+    </form>
+</div>

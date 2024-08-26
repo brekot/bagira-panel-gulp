@@ -9,6 +9,7 @@
 <a href="https://brekot.github.io/bagira-panel-gulp/my-request.html">Мои обращения</a><br>
 <a href="https://brekot.github.io/bagira-panel-gulp/support.html">Служба поддержки</a><br>
 <a href="https://brekot.github.io/bagira-panel-gulp/finance-documents.html">Финансы и документы</a><br>
+<a href="https://brekot.github.io/bagira-panel-gulp/profile.html">Профиль</a><br>
 
 <hr>
 

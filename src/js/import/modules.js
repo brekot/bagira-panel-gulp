@@ -7,3 +7,4 @@ import "%modules%/equipment-detail/equipment-detail";
 import "%modules%/select-input/select-input";
 import "%modules%/tabs-panel/tabs-panel";
 import "%modules%/input-file/input-file";
+import "%modules%/profile-block/profile-block";
