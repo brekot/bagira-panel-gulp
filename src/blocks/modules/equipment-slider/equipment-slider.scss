@@ -5,10 +5,12 @@
     &__slide {
         transition: opacity .5s;
     }
+    &__slider_set-active &__slide,
     &__slider:hover &__slide {
         opacity: .3;
     }
-    &__slider &__slide:hover {
+    &__slider &__slide:hover,
+    &__slider &__slide_active {
         opacity: 1;
     }
     &__str {

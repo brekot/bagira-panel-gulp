@@ -43,13 +43,14 @@ p {
 	}
 }
 
-ol {
-    padding: 0 0 0 20px;
+ol,
+ul {
+	padding: 0 0 0 15px;
+	margin: 0 0 10px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+li::marker {
+	color: $color-main;
 }
 
 b,

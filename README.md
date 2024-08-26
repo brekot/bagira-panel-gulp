@@ -4,8 +4,8 @@
 <a href="https://brekot.github.io/bagira-panel-gulp/objects.html">Охраняемые объекты</a><br>
 <a href="https://brekot.github.io/bagira-panel-gulp/request.html">Обращения / Реквизиты / Расторгнуть договор</a><br>
 <a href="https://brekot.github.io/bagira-panel-gulp/application-connection.html">Заявка на подключение нового объекта</a><br>
-<a href="https://brekot.github.io/bagira-panel-gulp/equipment.html">Оборудования и услуги</a><br>
-<br>
+<a href="https://brekot.github.io/bagira-panel-gulp/equipment-list.html">Оборудования и услуги</a><br>
+<a href="https://brekot.github.io/bagira-panel-gulp/equipment-detail.html">Оборудования и услуги (детальная)</a><br>
 <a href="https://brekot.github.io/bagira-panel-gulp/my-request.html">Мои обращения</a><br>
 <a href="https://brekot.github.io/bagira-panel-gulp/support.html">Служба поддержки</a><br>
 <a href="https://brekot.github.io/bagira-panel-gulp/finance-documents.html">Финансы и документы</a><br>
