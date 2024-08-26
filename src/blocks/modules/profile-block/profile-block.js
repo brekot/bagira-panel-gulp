@@ -59,5 +59,7 @@ document.addEventListener('click', (e) => {
 
             elem.classList.remove('form-profile__password-toggle_show');
         }
+
+        input.focus();
     }
 });
