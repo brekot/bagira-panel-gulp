@@ -1,15 +1,17 @@
-<a href="https://brekot.github.io/bagira-panel-gulp/">Главная страница</a><br>
-<a href="https://brekot.github.io/bagira-panel-gulp/index-warning.html">Предупреждение об отключении или уведомление об отключении</a><br>
-<a href="https://brekot.github.io/bagira-panel-gulp/balance.html">Пополнить баланс</a><br>
-<a href="https://brekot.github.io/bagira-panel-gulp/objects.html">Охраняемые объекты</a><br>
-<a href="https://brekot.github.io/bagira-panel-gulp/request.html">Обращения / Реквизиты / Расторгнуть договор</a><br>
-<a href="https://brekot.github.io/bagira-panel-gulp/application-connection.html">Заявка на подключение нового объекта</a><br>
-<a href="https://brekot.github.io/bagira-panel-gulp/equipment-list.html">Оборудования и услуги</a><br>
-<a href="https://brekot.github.io/bagira-panel-gulp/equipment-detail.html">Оборудования и услуги (детальная)</a><br>
-<a href="https://brekot.github.io/bagira-panel-gulp/my-request.html">Мои обращения</a><br>
-<a href="https://brekot.github.io/bagira-panel-gulp/support.html">Служба поддержки</a><br>
-<a href="https://brekot.github.io/bagira-panel-gulp/finance-documents.html">Финансы и документы</a><br>
-<a href="https://brekot.github.io/bagira-panel-gulp/profile.html">Профиль</a><br>
+<ol>
+    <li><a href="https://brekot.github.io/bagira-panel-gulp/">Главная страница</a></li>
+    <li><a href="https://brekot.github.io/bagira-panel-gulp/index-warning.html">Предупреждение об отключении или уведомление об отключении</a></li>
+    <li><a href="https://brekot.github.io/bagira-panel-gulp/balance.html">Пополнить баланс</a></li>
+    <li><a href="https://brekot.github.io/bagira-panel-gulp/objects.html">Охраняемые объекты</a></li>
+    <li><a href="https://brekot.github.io/bagira-panel-gulp/request.html">Обращения / Реквизиты / Расторгнуть договор</a></li>
+    <li><a href="https://brekot.github.io/bagira-panel-gulp/application-connection.html">Заявка на подключение нового объекта</a></li>
+    <li><a href="https://brekot.github.io/bagira-panel-gulp/equipment-list.html">Оборудования и услуги</a></li>
+    <li><a href="https://brekot.github.io/bagira-panel-gulp/equipment-detail.html">Оборудования и услуги (детальная)</a></li>
+    <li><a href="https://brekot.github.io/bagira-panel-gulp/my-request.html">Мои обращения</a></li>
+    <li><a href="https://brekot.github.io/bagira-panel-gulp/support.html">Служба поддержки</a></li>
+    <li><a href="https://brekot.github.io/bagira-panel-gulp/finance-documents.html">Финансы и документы</a></li>
+    <li><a href="https://brekot.github.io/bagira-panel-gulp/profile.html">Профиль</a>
+</ol>
 
 <hr>
 
@@ -18,9 +20,11 @@
 <hr>
 
 <b>Подключены в JS:</b><br>
+
 <ul>
     <li>Swiper - для слайдеров (https://swiperjs.com/)</li>
     <li>Fancybox - для окон (https://fancyapps.com/)</li>
+    <li>Imask - для маски телефона и email (https://unpkg.com/imask)</li>
 </ul>
 
 <hr>

@@ -8,4 +8,5 @@ Fancybox.bind('[data-fancybox-window]', {
 });
 
 import "./import/modules";
+import "./imask";
 import "./script";
