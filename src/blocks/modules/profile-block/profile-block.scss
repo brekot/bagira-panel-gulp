@@ -87,12 +87,10 @@
     }
     &__password-toggle {
         fill: $color-main;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         width: 50px;
-        opacity: 0;
-        pointer-events: none;
 
         &:hover {
             fill: $color-black;
@@ -112,10 +110,8 @@
             display: block;
         }
     }
-    &__line:hover &__password-toggle,
-    &__input:focus + &__password-toggle {
-        opacity: 1;
-        pointer-events: auto;
+    &__line_focus &__password-toggle {
+        display: flex;
     }
 
     @media (max-width: 859px)
@@ -136,16 +132,11 @@
             width: 100%;
         }
         &__password-toggle {
-            opacity: 1;
-            display: none;
             position: absolute;
             right: 10px;
             top: 50%;
             translate: 0 -50%;
             height: 50px;
-        }
-        &__input:focus + &__password-toggle {
-            display: flex;
         }
     }
 }
