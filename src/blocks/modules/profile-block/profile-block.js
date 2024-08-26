@@ -1,25 +1,28 @@
-document.querySelector('.readonly-toggle').addEventListener('click', (e) => {
+if (document.querySelector('.readonly-toggle'))
+{
+    document.querySelector('.readonly-toggle').addEventListener('click', (e) => {
 
-    let elem = e.target,
-        form = elem.closest('form'),
-        firstInput = form.querySelector('input'),
-        sendBtn = form.querySelector('.readonly-toggle-send');
+        let elem = e.target,
+            form = elem.closest('form'),
+            firstInput = form.querySelector('input'),
+            sendBtn = form.querySelector('.readonly-toggle-send');
 
-    form.querySelectorAll('input').forEach((e) => {
+        form.querySelectorAll('input').forEach((e) => {
 
-        e.readOnly = !e.readOnly;
+            e.readOnly = !e.readOnly;
+        });
+
+        firstInput.focus();
+
+        firstInput.setSelectionRange(firstInput.value.length, firstInput.value.length);
+
+        elem.classList.toggle('btn_main');
+
+        elem.classList.toggle('btn_dark');
+
+        sendBtn.classList.toggle('d-none');
     });
-
-    firstInput.focus();
-
-    firstInput.setSelectionRange(firstInput.value.length, firstInput.value.length);
-
-    elem.classList.toggle('btn_main');
-
-    elem.classList.toggle('btn_dark');
-
-    sendBtn.classList.toggle('d-none');
-});
+}
 
 document.querySelectorAll('.form-profile__input_password').forEach((e) => {
 
