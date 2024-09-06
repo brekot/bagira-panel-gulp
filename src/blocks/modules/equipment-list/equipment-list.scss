@@ -4,15 +4,14 @@
         display: flex;
         flex-wrap: wrap;
         gap: 33px 20px;
+        visibility: hidden;
     }
     &__item {
         transition: .5s;
+        visibility: visible;
     }
-    &__items:hover &__item {
+    &__items:hover &__item:not(:hover) {
         opacity: .3;
-    }
-    &__items &__item:hover {
-        opacity: 1;
     }
 
     @media (min-width: 1390px)
